@@ -1,0 +1,104 @@
+/*Основное*/
+body {
+	background-color: #f8f8f8;
+	font-family: 'Verdana', sans-serif;
+}
+h1 {
+    font-weight: 400;
+}
+p {
+    font-size: 14px;
+}	
+.menu {
+	font-family: 'Noto Sans', 'Istok Web', sans-serif;
+	font-size: 16px;
+}
+.menu a {
+	color: #7d7f8a;
+	text-decoration: none;
+}
+.menu a:hover {
+	color: #333333;
+	text-decoration: none;
+}
+.menu__item {
+	list-style: none;
+}
+
+/*Карточка товара*/
+.product-h2 {
+	color: black;
+	font-size: 18px;
+	font-weight: 400;
+	background-color: #eaeaea;
+}
+.shot-description {
+	color: #707070;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 16px;
+}
+.full-description {
+	color: #484343;
+	font-size: 16px;
+	font-weight: 400px;
+	line-height: 24px;
+	text-align: left;
+}
+.character-description {
+	list-style-image: url(../Clothing-store/img/elements/marker-list.png);
+	font-size: 14px;
+    color: #333333;
+}
+
+.img-product {
+	border: 1px solid rgba(23, 177, 226, 0.52);
+}
+
+/*Форма обратной связи*/
+input#name {
+    height: 20px;
+    width: 20%;
+    font-size: 14px;
+    padding: 5px;
+    color: #333333;
+}
+input#email {
+    height: 20px;
+    width: 20%;
+    font-size: 14px;
+    padding: 5px;
+    color: #333333;
+}
+input#theme {
+    height: 20px;
+    width: 20%;
+    font-size: 14px;
+    padding: 5px;
+    color: #333333;
+}
+textarea#comment {
+    height: 100px;
+    width: 20%;
+    font-size: 14px;
+    padding: 5px;
+    color: #333333;
+}
+input#age {
+    height: 20px;
+    width: 40px;
+    font-size: 14px;
+    padding: 5px;
+    color: #333333;
+    text-align: center;
+}
+select#city {
+    height: 25px;
+    width: 20%;
+    font-size: 14px;
+    background-color: white;
+    color: #333333;
+}
+.indent-form {
+	margin-bottom: 10px;
+}

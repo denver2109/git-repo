@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Контакты | EntireLife</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+	<header>
+		<ul class="menu">
+			<li class="menu__item"><a href="index.html">Главная</a></li>
+			<li class="menu__item"><a href="catalog.html">Каталог</a></li>
+			<li class="menu__item"><a href="contacts.html">Контакты</a></li>
+		</ul>
+		<hr>		
+	</header>
+	<h1>Напишите нам</h1>
+	<form action="send.php" id="contact-form">
+		<fieldset>
+			<div class="indent-form">
+				<label for="name">Ваше имя:</label><br>
+				<input type="text" placeholder="Введите ваше имя" id="name">
+			</div>
+			<div class="indent-form">
+				<label for="email">Ваш E-mail:</label><br>
+				<input type="email" placeholder="Введите адрес электронной почты" id="email">
+			</div>
+			<div class="indent-form">
+				<label for="theme">Тема:</label><br>
+				<input type="text" id="theme">
+			</div>
+			<div class="indent-form">
+				<label for="comment">Текст сообщения:</label><br>
+				<textarea id="comment" cols="20" rows="5"></textarea>		
+			</div>
+			<p><b>Дополнительная информация о Вас:</b></p>
+			<div class="indent-form">
+		      <label for="age">Ваш возраст</label>
+		      <input type="number" id="age" min="10" max="80">
+		    </div>
+		    <div class="indent-form">
+		      <label for="city">
+		        Город
+		      </label>
+		      <select id="city">
+		        <optgroup label="Россия">
+		          <option value="">Москва</option>
+		          <option value="">Санкт-Петербург</option>
+		          <option value="">Владивосток</option>
+		          <option value="">Екатеринбург</option>
+		          <option value="">Тамбов</option>
+		          <option value="">Уфа</option> 
+		        </optgroup>
+		        
+		        <optgroup label="Украина">
+		          <option value="">Киев</option>
+		          <option value="">Львов</option>
+		          <option value="">Харьков</option>
+		        </optgroup>
+		        
+		        <optgroup label="Беларусь">
+		          <option value="">Минск</option>
+		          <option value="">Брест</option>
+		          <option value="">Гомель</option> 
+		        </optgroup>
+		        
+		        <optgroup label="Казахстан">
+		          <option value="">Астана</option>
+		          <option value="">Алматы</option>
+		          <option value="">Атырау</option>
+		          <option value="">Караганда</option>
+		        </optgroup>
+		      </select>
+		    </div>
+		    <div class="indent-form">
+		      <label for="subscribe">
+		        Подписаться на рассылку?
+		        <input type="checkbox" id="subscribe" checked>
+		      </label>
+		    </div>
+  			<input type="submit" value="Отправить сообщение">
+		</fieldset>
+	</form>
+	<h2>Адрес</h2>
+	<p>Адрес: 101000, г. Москва, ул. Кремль 1</p>
+	<p>Телефон: <a href="tel:937-99-92">937-99-92</a></p>
+	<p>Email: <a href="mailto:forus@entirelife.ru">forus@entirelife.ru</a></p>
+	<div>
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aeaf6752ab5b1714d9132d18c7d7fdd018e201f880dc7eca93beb6d8167f4532c&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+	</div>
+	<footer>
+		<hr>
+		<p>&copy; «Все права защищены»</p>
+	</footer>
+	</body>
+</html>
