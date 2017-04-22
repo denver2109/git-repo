@@ -3,12 +3,30 @@ body {
 	background-color: #f8f8f8;
 	font-family: 'Verdana', sans-serif;
 }
+header {
+    border-bottom: 1px solid #828282;
+}
+footer {
+    border-top: 1px solid #828282;
+    margin-top: 20px;
+}
 h1 {
     font-weight: 400;
 }
 p {
     font-size: 14px;
+}
+table {
+    border-spacing: 0;
+    font-size: 14px;
+    border-collapse: collapse;
 }	
+td {
+    border: 1px solid #333;
+}
+th {
+    border: 1px solid #333;
+}
 .menu {
 	font-family: 'Noto Sans', 'Istok Web', sans-serif;
 	font-size: 16px;
@@ -45,14 +63,26 @@ p {
 	line-height: 24px;
 	text-align: left;
 }
-.character-description {
+ul.character {
 	list-style-image: url(../Clothing-store/img/elements/marker-list.png);
 	font-size: 14px;
     color: #333333;
 }
-
 .img-product {
 	border: 1px solid rgba(23, 177, 226, 0.52);
+}
+.img-product:hover {
+    border: 1px solid transparent;
+}
+table.character td:nth-child(1) {
+    font-weight: 600;
+}
+table.character td {
+    padding: 5px;
+}
+table.character th {
+    padding: 5px;
+    height: 25px;
 }
 
 /*Форма обратной связи*/
@@ -69,6 +99,11 @@ input#email {
     font-size: 14px;
     padding: 5px;
     color: #333333;
+    background-color: #eee;
+}
+input#email:focus {
+    color: red;
+    background-color: white;
 }
 input#theme {
     height: 20px;
@@ -83,6 +118,7 @@ textarea#comment {
     font-size: 14px;
     padding: 5px;
     color: #333333;
+    text-transform: capitalize;
 }
 input#age {
     height: 20px;
@@ -99,6 +135,6 @@ select#city {
     background-color: white;
     color: #333333;
 }
-.indent-form {
+.form__item {
 	margin-bottom: 10px;
 }
