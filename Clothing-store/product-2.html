@@ -6,48 +6,70 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header>
-		<div class="logo">
-			<img src="../Clothing-store/img/elements/logo.png" alt="">
-		</div>	
-		<ul class="menu">
-			<li class="menu__item"><a href="index.html">Главная</a></li>
-			<li class="menu__item"><a href="catalog.html">Каталог</a></li>
-			<li class="menu__item"><a href="contacts.html">Контакты</a></li>
-		</ul>	
+	<header class="header">
+		<div class="container header__content">
+			<div class="logo">
+				<a href="/"><img class="logo__img" src="https://entirelife.ru/img/elements/logo.png" alt=""></a>
+			</div>
+			<div class="menu">
+				<ul>
+					<li class="menu__item"><a href="/">Главная</a></li>
+					<li class="menu__item"><a href="catalog.html">Каталог</a></li>
+					<li class="menu__item"><a href="contacts.html">Контакты</a></li>
+				</ul>
+			</div>	
+		</div>
 	</header>
-	<h1>Накидка United Colors of Benetton</h1>
-	<a href="../Clothing-store/img/nakidka.jpg" target="_blank"><img class="img-product" src="../Clothing-store/img/nakidka.jpg" alt="" width="200"></a>
-	<p>1990 руб.</p>
-	<h2 class="product-h2">Описание товара</h2>
-	<p class="shot-description">Элегантная накидка United Colors of Benetton согреет вас холодной зимой.</p>
-	<h2 class="product-h2">Характеристики товара</h2>
-	<table class="character">	
-		<tbody>
-			<tr>
-				<td>Состав</td>
-				<td>Акрил - 51%, Полиэстер - 34%, Нейлон - 10%, Шерсть - 5%</td>
-			</tr>
-			<tr>
-				<td>Страна производства</td>
-				<td>Китай</td>
-			</tr>
-			<tr>
-				<td>Сезон</td>
-				<td>Демисезон, Зима</td>
-			</tr>
-		</tbody>	
-	</table>
-	<p>Дополнительные характеристики:</p>	
-	<ul class="character">
-		<li><b>Цвет:</b> серый</li>
-		<li><b>Узор:</b> Однотонный</li>
-		<li><b>Застежка:</b> без застежки</li>
-	</ul>
-	<h2 class="product-h2">Подробное описание товара</h2>
-	<p class="full-description">Накидка прекрасно подходит к любому образу, идеально подходит для прохладных дней, в ней вы себя будете чувствовать уютно и тепло.</p>
-	<footer>
-		<p>&copy; «Все права защищены»</p>
-	</footer>
+	<div class="content">
+		<div class="container">
+			<h1>Накидка United Colors of Benetton</h1>
+				<div class="product">
+					<div class="product__item">
+						<div class="product__img">
+							<a href="https://entirelife.ru/img/nakidka.jpg" target="_blank"><img class="product__img__item" src="https://entirelife.ru/img/nakidka.jpg" alt=""></a>
+						</div>	
+					<div class="product__description">	
+						<h2 class="product__description__h2">Описание товара</h2>
+						<p class="product__description__shot">Элегантная накидка United Colors of Benetton согреет вас холодной зимой.</p>
+						<div class="product__price">1990 руб.</div>
+						<input type="submit" value="Купить" class="buy">
+					</div>
+				</div>		
+				<h2 class="product__description__h2">Характеристики товара</h2>
+				<table class="product__character">	
+					<tbody>
+						<tr>
+							<th colspan="2">Таблица характеристик</th>
+						</tr>
+						<tr>
+							<td>Состав</td>
+							<td>Акрил - 51%, Полиэстер - 34%, Нейлон - 10%, Шерсть - 5%</td>
+						</tr>
+						<tr>
+							<td>Страна производства</td>
+							<td>Китай</td>
+						</tr>
+						<tr>
+							<td>Сезон</td>
+							<td>Демисезон, Зима</td>
+						</tr>
+					</tbody>	
+				</table>
+				<p>Дополнительные характеристики:</p>	
+				<ul class="product__character">
+					<li><b>Цвет:</b> серый</li>
+					<li><b>Узор:</b> Однотонный</li>
+					<li><b>Застежка:</b> без застежки</li>
+				</ul>
+				<h2 class="product__description__h2">Подробное описание товара</h2>
+				<p class="product__description__full">Накидка прекрасно подходит к любому образу, идеально подходит для прохладных дней, в ней вы себя будете чувствовать уютно и тепло.</p>
+			</div>
+		</div>	
+	</div>
+	<footer class="footer">
+		<div class="container footer__container">
+			<div class="copywrite">&copy; «Все права защищены»</div>
+		</div>	
+	</footer>	
 </body>
 </html>		

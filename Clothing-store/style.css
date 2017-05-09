@@ -1,16 +1,30 @@
 /*Основное*/
+html {
+    background-color: #f8f8f8;
+    min-height: 100%;
+    font-family: 'Verdana', sans-serif;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+}
 body {
-	background-color: #f8f8f8;
-	font-family: 'Verdana', sans-serif;
-}
-header {
-    border-bottom: 1px solid #828282;
-}
-footer {
-    border-top: 1px solid #828282;
-    margin-top: 20px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: -webkit-flex;
+    display: flex; 
+    flex-direction: column;
+    flex: auto;
 }
 h1 {
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+}
+h2 {
+    font-weight: 400;
+}
+h3 {
     font-weight: 400;
 }
 p {
@@ -27,9 +41,65 @@ td {
 th {
     border: 1px solid #333;
 }
+* {
+    box-sizing: border-box;
+}
+.container {
+    margin-left: 7%;
+    margin-right: 7%;  
+    display: -webkit-flex;
+    display: flex;
+    height: 100%;  
+    width: 100%;
+    flex-flow: row wrap;
+}
+.header {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #828282;
+    display: -webkit-flex;
+    display: flex;
+}
+.header__content {
+    justify-content: space-between;    
+}
+.footer__container {
+    justify-content: flex-end;
+}
+.content__content{
+    justify-content: space-between;
+}
+.content {
+    display: -webkit-flex;
+    display: flex;
+}
+.sidebar {
+    min-width: 300px;
+    margin-right: 7%;
+    margin-top: 35px;
+}
+.content__sidebar {
+    margin-right: 0;
+    max-width: 900px;
+}
+.footer {
+    display: -webkit-flex;
+    display: flex;
+    border-top: 1px solid #828282;
+    margin-top: 20px;
+    width: 100%;
+}
+/*Шапка сайта*/
+.logo {
+    max-width: 250px;
+}
+.logo__img {
+    width: 100%;
+}
 .menu {
 	font-family: 'Noto Sans', 'Istok Web', sans-serif;
 	font-size: 16px;
+    justify-content: flex-end;
 }
 .menu a {
 	color: #7d7f8a;
@@ -40,62 +110,127 @@ th {
 	text-decoration: none;
 }
 .menu__item {
-	list-style: none;
+    float: left;
+    list-style: none;
+    margin-right: 30px;
+    padding: 7px;
+}
+.copywrite {
+    margin: 20px 50px 20px 0px;
+    font-size: 14px;
 }
 
+/*Каталог продукции*/
+.catalog {
+    width: 100%;
+    display: inline;
+}
+.catalog__item {
+    max-width: 200px;
+    margin-bottom: 15px;
+    min-height: 350px;
+    margin: 0 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+.catalog__item__link {
+    font-size: 14px;
+    text-align: center;
+}
+.catalog__item__img img {
+    max-width: 200px;
+}
 /*Карточка товара*/
-.product-h2 {
+.product__price {
+    font-size: 25px;
+    margin-top: 30px;
+    font-style: italic;
+    margin-left: 25px;
+}
+.product__item {
+    width: 100%;
+}
+.product__description {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 700px;
+}
+.product__description__h2 {
 	color: black;
 	font-size: 18px;
 	font-weight: 400;
 	background-color: #eaeaea;
 }
-.shot-description {
+
+.product__description__shot {
 	color: #707070;
 	font-size: 14px;
 	font-style: italic;
 	line-height: 16px;
 }
-.full-description {
+.product__description__full {
 	color: #484343;
 	font-size: 16px;
-	font-weight: 400px;
+	font-weight: 400;
 	line-height: 24px;
 	text-align: left;
 }
-ul.character {
-	list-style-image: url(../Clothing-store/img/elements/marker-list.png);
+ul.product__character {
+	list-style-image: url(https://entirelife.ruhttps://entirelife.ru/img/elements/marker-list.png);
 	font-size: 14px;
     color: #333333;
 }
-.img-product {
+.product__img {
+    margin: 0 50px 0 30px;
+    display: inline-block;
+}
+.product__img__item {
 	border: 1px solid rgba(23, 177, 226, 0.52);
 }
-.img-product:hover {
+img.product__img__item {
+    max-width: 300px;
+}
+.product__img__item:hover {
     border: 1px solid transparent;
 }
-table.character td:nth-child(1) {
+table.product__character td:nth-child(1) {
     font-weight: 600;
 }
-table.character td {
+table.product__character td {
     padding: 5px;
 }
-table.character th {
+table.product__character th {
     padding: 5px;
     height: 25px;
 }
-
+.buy {
+    font-size: 17px;
+    margin: 20px;
+    padding: 13px 35px;
+    background-color: rgba(255, 0, 0, 0.69);
+    border: 1px solid rgba(255, 0, 0, 0.69);
+    color: white;
+    outline: none;
+}
+.buy:hover {
+    font-size: 17px;
+    margin: 20px;
+    padding: 13px 35px;
+    background-color: rgb(255, 0, 0);
+    border: 1px solid rgb(255, 0, 0);
+    color: white;
+}
 /*Форма обратной связи*/
 input#name {
-    height: 20px;
-    width: 20%;
+    height: 25px;
+    width: 100%;
     font-size: 14px;
     padding: 5px;
     color: #333333;
 }
 input#email {
-    height: 20px;
-    width: 20%;
+    height: 25px;
+    width: 100%;
     font-size: 14px;
     padding: 5px;
     color: #333333;
@@ -106,22 +241,22 @@ input#email:focus {
     background-color: white;
 }
 input#theme {
-    height: 20px;
-    width: 20%;
+    height: 25px;
+    width: 100%;
     font-size: 14px;
     padding: 5px;
     color: #333333;
 }
 textarea#comment {
     height: 100px;
-    width: 20%;
+    width: 100%;
     font-size: 14px;
     padding: 5px;
     color: #333333;
     text-transform: capitalize;
 }
 input#age {
-    height: 20px;
+    height: 25px;
     width: 40px;
     font-size: 14px;
     padding: 5px;
@@ -130,11 +265,20 @@ input#age {
 }
 select#city {
     height: 25px;
-    width: 20%;
+    width: 100%;
     font-size: 14px;
     background-color: white;
     color: #333333;
 }
 .form__item {
 	margin-bottom: 10px;
+}
+.adress {
+    max-width: 800px;
+    width: 98%;
+}
+
+/*SIDEBAR*/
+span.h2 {
+    text-transform: uppercase;
 }
