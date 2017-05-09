@@ -1,0 +1,21 @@
+<script>
+var rand = Math.floor(Math.random() * 100);
+
+function numbGame () {
+	
+  var a = prompt( "Введите число" );
+  
+  if ( a == rand ) {
+    alert ( "Вы угадали!" );
+  }
+  else if ( a > rand ) {
+    alert ( "Ввведите число поменьше" );
+  } 
+  else if ( a < rand ) {
+    alert ( "Ввведите число побольше" );
+  }
+  return "Правильный ответ: " +rand;
+}
+alert( numbGame() );
+
+</script>
